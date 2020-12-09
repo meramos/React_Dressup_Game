@@ -25,42 +25,14 @@
     height:1123px; /* height of actual image */
 }
 
-// eyes: 9 total
+// update this map when new items or categories are added
+$items: ("eyes": 9, "ears": 3, "mouth": 4, "nose": 3, "clothes": 3);
 
-@for $i from 1 through 9 { //final number is included when using 'through' instead of 'to'
-    .eyes#{$i} {
-        background-image: url(../img/eyes/eyes#{$i}.png);
-    }
-}
+@each $item, $total in $items {
 
-// ears: 3 total
-
-@for $i from 1 through 3 { //final number is included when using 'through' instead of 'to'
-    .ears#{$i} {
-        background-image: url(../img/ears/ears#{$i}.png);
-    }
-}
-
-// mouth: 4 total
-
-@for $i from 1 through 3 { //final number is included when using 'through' instead of 'to'
-    .mouth#{$i} {
-        background-image: url(../img/mouth/mouth#{$i}.png);
-    }
-}
-
-// nose: 3 total
-
-@for $i from 1 through 3 { //final number is included when using 'through' instead of 'to'
-    .nose#{$i} {
-        background-image: url(../img/nose/nose#{$i}.png);
-    }
-}
-
-// clothes: 3 total
-
-@for $i from 1 through 3 { //final number is included when using 'through' instead of 'to'
-    .clothes#{$i} {
-        background-image: url(../img/clothes/clothes#{$i}.png);
+    @for $i from 1 through $total {
+        .#{$item}#{$i} {
+            background-image: url(../img/#{$item}/#{$item}#{$i}.png);
+        }
     }
 }
