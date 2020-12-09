@@ -27,99 +27,40 @@
 
 // eyes: 9 total
 
-.eyes1{
-    background-image: url(../img/eyes/eyes1.png);
-}
-
-.eyes2{
-    background-image: url(../img/eyes/eyes2.png);
-}
-
-.eyes3{
-    background-image: url(../img/eyes/eyes3.png);
-}
-
-.eyes4{
-    background-image: url(../img/eyes/eyes4.png);
-}
-
-.eyes5{
-    background-image: url(../img/eyes/eyes5.png);
-}
-
-.eyes6{
-    background-image: url(../img/eyes/eyes6.png);
-}
-
-.eyes7{
-    background-image: url(../img/eyes/eyes7.png);
-}
-
-.eyes8{
-    background-image: url(../img/eyes/eyes8.png);
-}
-
-.eyes9{
-    background-image: url(../img/eyes/eyes9.png);
+@for $i from 1 through 9 { //final number is included when using 'through' instead of 'to'
+    .eyes#{$i} {
+        background-image: url(../img/eyes/eyes#{$i}.png);
+    }
 }
 
 // ears: 3 total
 
-.ears1{
-    background-image: url(../img/ears/ears1.png);
-}
-
-.ears2{
-    background-image: url(../img/ears/ears2.png);
-}
-
-.ears3{
-    background-image: url(../img/ears/ears3.png);
+@for $i from 1 through 3 { //final number is included when using 'through' instead of 'to'
+    .ears#{$i} {
+        background-image: url(../img/ears/ears#{$i}.png);
+    }
 }
 
 // mouth: 4 total
 
-.mouth1{
-    background-image: url(../img/mouth/mouth1.png);
-}
-
-.mouth2{
-    background-image: url(../img/mouth/mouth2.png);
-}
-
-.mouth3{
-    background-image: url(../img/mouth/mouth3.png);
-}
-
-.mouth4{
-    background-image: url(../img/mouth/mouth4.png);
+@for $i from 1 through 3 { //final number is included when using 'through' instead of 'to'
+    .mouth#{$i} {
+        background-image: url(../img/mouth/mouth#{$i}.png);
+    }
 }
 
 // nose: 3 total
 
-.nose1{
-    background-image: url(../img/nose/nose1.png);
-}
-
-.nose2{
-    background-image: url(../img/nose/nose2.png);
-}
-
-.nose3{
-    background-image: url(../img/nose/nose3.png);
+@for $i from 1 through 3 { //final number is included when using 'through' instead of 'to'
+    .nose#{$i} {
+        background-image: url(../img/nose/nose#{$i}.png);
+    }
 }
 
 // clothes: 3 total
 
-.clothes1{
-    background-image: url(../img/clothes/clothes1.png);
+@for $i from 1 through 3 { //final number is included when using 'through' instead of 'to'
+    .clothes#{$i} {
+        background-image: url(../img/clothes/clothes#{$i}.png);
+    }
 }
-
-.clothes2{
-    background-image: url(../img/clothes/clothes2.png);
-}
-
-.clothes3{
-    background-image: url(../img/clothes/clothes3.png);
-}
-
