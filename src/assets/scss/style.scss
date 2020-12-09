@@ -1,0 +1,125 @@
+#container{
+    position: absolute;
+    margin:auto;
+    width: 1000px;
+    height: 1123px;
+}
+
+#body{
+    position:absolute;
+    width:794px;   /* width of actual image */
+    height:1123px; /* height of actual image */
+    background-image: url("../img/body.png");
+    background-repeat: no-repeat;
+}
+
+#background{
+    bottom: 1246px;
+    right: 1119px;
+    position: absolute;
+}
+
+#eyes, #ears, #nose, #mouth, #clothes{
+    position:absolute;
+    width:794px;   /* width of actual image */
+    height:1123px; /* height of actual image */
+}
+
+// eyes: 9 total
+
+.eyes1{
+    background-image: url(../img/eyes/eyes1.png);
+}
+
+.eyes2{
+    background-image: url(../img/eyes/eyes2.png);
+}
+
+.eyes3{
+    background-image: url(../img/eyes/eyes3.png);
+}
+
+.eyes4{
+    background-image: url(../img/eyes/eyes4.png);
+}
+
+.eyes5{
+    background-image: url(../img/eyes/eyes5.png);
+}
+
+.eyes6{
+    background-image: url(../img/eyes/eyes6.png);
+}
+
+.eyes7{
+    background-image: url(../img/eyes/eyes7.png);
+}
+
+.eyes8{
+    background-image: url(../img/eyes/eyes8.png);
+}
+
+.eyes9{
+    background-image: url(../img/eyes/eyes9.png);
+}
+
+// ears: 3 total
+
+.ears1{
+    background-image: url(../img/ears/ears1.png);
+}
+
+.ears2{
+    background-image: url(../img/ears/ears2.png);
+}
+
+.ears3{
+    background-image: url(../img/ears/ears3.png);
+}
+
+// mouth: 4 total
+
+.mouth1{
+    background-image: url(../img/mouth/mouth1.png);
+}
+
+.mouth2{
+    background-image: url(../img/mouth/mouth2.png);
+}
+
+.mouth3{
+    background-image: url(../img/mouth/mouth3.png);
+}
+
+.mouth4{
+    background-image: url(../img/mouth/mouth4.png);
+}
+
+// nose: 3 total
+
+.nose1{
+    background-image: url(../img/nose/nose1.png);
+}
+
+.nose2{
+    background-image: url(../img/nose/nose2.png);
+}
+
+.nose3{
+    background-image: url(../img/nose/nose3.png);
+}
+
+// clothes: 3 total
+
+.clothes1{
+    background-image: url(../img/clothes/clothes1.png);
+}
+
+.clothes2{
+    background-image: url(../img/clothes/clothes2.png);
+}
+
+.clothes3{
+    background-image: url(../img/clothes/clothes3.png);
+}
+
