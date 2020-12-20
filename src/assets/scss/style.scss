@@ -36,3 +36,35 @@ $items: ("eyes": 9, "ears": 3, "mouth": 4, "nose": 3, "clothes": 3);
         }
     }
 }
+
+// Position "next" buttons
+
+#nexteyes{
+    position:absolute;
+    left:600px;
+    top:440px;
+}
+
+#nextears{
+    position:absolute;
+    left:600px;
+    top:470px;
+}
+
+#nextmouth{
+    position:absolute;
+    left:600px;
+    top:500px;
+}
+
+#nextnose{
+    position:absolute;
+    left:600px;
+    top:530px;
+}
+
+#nextclothes{
+    position:absolute;
+    left:600px;
+    top:560px;
+}
