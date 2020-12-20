@@ -31,19 +31,17 @@ function App() {
       <div id="container">
         <div id="background">
             <div id="body"></div>
-            <div id="eyes" className={"eyes"+(dressupState["eyes"].current+1)} ></div>
-            <div id="ears" className={"ears"+(dressupState["ears"].current+1)}></div>
-            <div id="nose" className={"nose"+(dressupState["nose"].current+1)}></div>
-            <div id="mouth" className={"mouth"+(dressupState["mouth"].current+1)}></div>
-            <div id="clothes" className={"clothes"+(dressupState["clothes"].current+1)}></div>
+            { Object.keys(dressupState).map((item) => 
+                <div id={item} className={item+(dressupState[item].current+1)} key={item}></div>
+              )
+            } 
         </div>
       </div>
 
-      <input type="button" value="next eyes" id="nexteyes" onClick={() => next("eyes")}/>
-      <input type="button" value="next ears" id="nextears" onClick={() => next("ears")}/>
-      <input type="button" value="next mouth" id="nextmouth" onClick={() => next("mouth")}/>
-      <input type="button" value="next nose" id="nextnose" onClick={() => next("nose")}/>
-      <input type="button" value="next clothes" id="nextclothes" onClick={() => next("clothes")}/>
+      { Object.keys(dressupState).map((item) => 
+          <input type="button" value={"next "+item} key={item} id={"next"+item} onClick={() => next(item)}/>
+        )
+      }
 
     </div>
   );

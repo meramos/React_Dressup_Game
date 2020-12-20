@@ -39,32 +39,16 @@ $items: ("eyes": 9, "ears": 3, "mouth": 4, "nose": 3, "clothes": 3);
 
 // Position "next" buttons
 
-#nexteyes{
-    position:absolute;
-    left:600px;
-    top:440px;
-}
+$height: 410px;
 
-#nextears{
-    position:absolute;
-    left:600px;
-    top:470px;
-}
+@each $item, $total in $items {
 
-#nextmouth{
-    position:absolute;
-    left:600px;
-    top:500px;
-}
+    $height: $height + 30px;
 
-#nextnose{
-    position:absolute;
-    left:600px;
-    top:530px;
-}
-
-#nextclothes{
-    position:absolute;
-    left:600px;
-    top:560px;
+    #next#{$item}{
+        position:absolute;
+        left:600px;
+        top: $height;
+    }
+    
 }
