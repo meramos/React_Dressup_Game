@@ -1,3 +1,9 @@
+# React_Dressup_Game
+
+<h2>View website here: https://meramos.github.io/React_Dressup_Game/</h2>
+
+Tutorial followed in order to host React App on GitHub: https://levelup.gitconnected.com/deploying-a-create-react-app-with-routing-to-github-pages-f386b6ce84c2
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
