@@ -29,6 +29,12 @@ function App() {
     })
   }
 
+  function randomize(){
+    // for each dressup item, generate a random integer and assign it to current 
+    Object.keys(dressupState).map((item) => 
+      updateDressUp(item, Math.floor(Math.random() * Math.floor(dressupState[item].total)))
+    )
+  }
 
   return (
     <div className="App">
@@ -46,6 +52,8 @@ function App() {
           <input type="button" value={"next "+item} key={item} id={"next"+item} onClick={() => next(item)}/>
         )
       }
+
+      <input type="button" value="RANDOMIZE" id="randomize" onClick={() => randomize()}/>
 
     </div>
   );
