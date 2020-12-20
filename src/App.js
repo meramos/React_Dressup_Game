@@ -16,6 +16,10 @@ function App() {
     let next_num = dressupState[item].current + 1
     // if next_num exceeds total, restart (set current to 0)
     let new_current = next_num < dressupState[item].total ? next_num : 0
+    updateDressUp(item, new_current)
+  }
+
+  function updateDressUp(item,new_current){
     setDressupState({
       ...dressupState,
       [item]: {
