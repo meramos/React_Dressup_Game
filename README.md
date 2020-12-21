@@ -4,6 +4,8 @@
 
 Tutorial followed in order to host React App on GitHub: https://levelup.gitconnected.com/deploying-a-create-react-app-with-routing-to-github-pages-f386b6ce84c2
 
+<h2>Read tutorial here: https://mariaeramosmorales.medium.com/make-a-dress-up-game-or-character-generator-37bdebab9601</h2>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
